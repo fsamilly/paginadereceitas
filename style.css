@@ -1,0 +1,169 @@
+:root{
+    --nutmeg: hsl(14, 45%, 36%)
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Young-Serif: "Young Serif", serif;
+    --Outfit: "Outfit", sans-serif;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+   
+.caixa{
+    background-color: white;
+    height:  40 px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    }
+    .caixa img {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+       }
+       .caixa p{
+        margin: 20px 0 0 0;
+       }
+    
+body{
+        background-color: rgb(209, 178, 238);
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-family: var(--outfit);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    
+    
+    p{
+        font-size: 1.6rem;
+        color: var(--WengeBrown);
+        font-family: var(--Outfit)
+        
+    }
+   
+    img{
+        width: 70%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    h1, h2, h3 {
+        font-family: var(--Young-Serif);
+        color: rgb(82, 16, 16);
+    }
+    h1{
+        font-size: 4rem;
+        margin: 0;
+    }
+    h2{
+        margin-top: 2rem;
+        margin-bottom: -1rem;
+        font-size: 2.2rem;
+        color: var(--Nutmeg);
+        color:rgb(82, 16, 16) ;
+    }
+    h3{
+        font-size: 2.0rem;
+    }
+    .time{
+        background-color: rgb(209, 178, 238);
+        border-radius: 10px;
+        
+    }
+    li{
+        color:  var(--WengeBrown);
+        line-height: 2;
+    padding-left: 2rem;
+    font-family: var(--Outfit);
+    color: rgb(82, 16, 16) ;
+};
+    
+    li::marker{
+        color: var(--Nutmeg);
+        font-weight: bold;
+    }
+    ol{
+        list-style-position: outside;
+        font-family: var(--Outfit);
+        
+    }
+    tr{
+        color: var(--WengeBrown);
+    font-weight: lighter;
+    font-family: var(--Outfit);
+    color: rgb(82, 16, 16) ;
+};
+    
+    .container{
+        max-width: 70rem;
+        margin: 6rem auto;
+    }
+    @media (max-width: 480px) {
+        .container{
+            width: 90%;
+        }
+    }
+    h1 {
+        font-size: 3.8rem;
+    }
+
+span {
+    font-weight: bold;
+}
+
+.image {
+    border-radius: 1rem;
+}
+.recipe__time {
+    background-color: var(--Rose-White);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.recipe__time--title {
+    margin-top: 0rem;
+    color: var(--Dark-Raspberry);
+    font-family: var(--Outfit);
+    font-size: 1.8rem;
+}
+.recipe__time li::marker{
+    color: var(--Dark-Raspberry);
+}
+.ingredients,
+.instructions {
+    border-bottom: 1px solid var(--LightGrey);
+    padding-bottom: 2rem;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table td {
+    padding-left: 2rem;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--LightGrey);
+}
+.table__left-side {
+    color: var(--Wenge-Brown);
+    font-weight: 400;
+}
+.table__right-side {
+    color: var(--Nutmeg);
+    font-weight: bold;
+}
